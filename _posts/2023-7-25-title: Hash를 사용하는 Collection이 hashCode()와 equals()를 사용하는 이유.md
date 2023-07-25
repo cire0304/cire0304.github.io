@@ -24,8 +24,7 @@ hash를 사용하는 Collection들은 왜 `hashCode()` 와 `equals()` 메서드�
 
 ## hashCode()를 사용하는 이유
 
-제가 생각하기에 `hashCode()`를 사용하는 이유는 Hash 알고리즘을 사용하기 때문이라고 생각합니다.
-
+제가 생각하기에 `hashCode()`를 사용하는 이유는 Hash 알고리즘을 사용하기 때문이라고 생각합니다.  
 (적고 나니 정말 너무나 당연한 이유였네요…)
 
 Hash 알고리즘은 Hash function을 이용해서 키값을 hash code로 변환 후 이 값을 버킷 값으로 이용하는 알고리즘 입니다. 

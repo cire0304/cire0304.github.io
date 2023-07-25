@@ -7,11 +7,10 @@ title: Hash를 사용하는 Collection이 hashCode()와 equals()를 사용하는
 
 HashSet이나 HashMap과 같은 hash를 사용하는 Collection들은 아래 그림과 같은 방법으로 객체가 동등한지 를 판단합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25cbd13a-4e86-4ebc-9e5e-64d5ff177954/Untitled.png)
+![image](https://github.com/cire0304/cire0304.github.io/assets/80495427/1427000a-0038-4844-bd31-81b4d19acb0f)
 
-> hashCode() : 객체의 주소 값을 이용해서 해싱 기법을 통해 만든 해시 코드 반환
-equals() : 객체가 저장된 메모리 주소 값 반환
-> 
+> hashCode() : 객체의 주소 값을 이용해서 해싱 기법을 통해 만든 해시 코드 반환  
+> equals() : 객체가 저장된 메모리 주소 값 반환
 
 ## equals()만으로 동등성 비교가 가능하지 않을까?
 
@@ -33,7 +32,9 @@ Hash 알고리즘은 Hash function을 이용해서 키값을 hash code로 변환
 
 자바에서는 hashCode() 메서드 반환 값이 버킷 값으로 사용되는걸로 이해했습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b5c49f68-f19d-4182-8942-a4ca72c01bbb/Untitled.png)
+![image](https://github.com/cire0304/cire0304.github.io/assets/80495427/c9064d1d-1ad4-4368-8c23-5f1d819a1f7e)
+
+(출처 : https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
 
 위의 그림과 같이 Hashing 된 값(hash code)에 따라 적절한 인데스에 자료들을 저장함으로써, 빠르게 데이터를 찾을 수 있게 됩니다.
 

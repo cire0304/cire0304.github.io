@@ -4,6 +4,9 @@ title: Hash를 사용하는 Collection이 hashCode()와 equals()를 사용하는
 categories: Java
 tag: [Java, Collection]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 ## Hash Collection의 동등성 판단

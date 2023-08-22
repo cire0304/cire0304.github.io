@@ -1,0 +1,99 @@
+---
+title:  "제너릭에 대해서 공부해보자!"
+
+categories:
+  - Java-basic
+tags:
+  - Java
+
+toc: true
+toc_sticky: true
+
+date: 2023-08-21
+last_modified_at: 2023-08-21
+---
+
+# 제너릭
+
+- 컴파일 시점에 컴파일러가 타입을 체크를 하는 것
+  - 컴파일러가 문법 오류를 잡아주기 때문에, 좀 더 타입 안전한 프로그래밍이 가능하다.
+
+## Type parameter와 Type argument
+
+```java
+public class Generics {
+  class Hello<T> { // T -> type parameter
+  }
+
+  public static main(String[] args) {
+    new Hello<String>(); // String -> type argument
+  }
+}
+```
+
+## Raw Type
+
+type argument를 사용하지 않은 타입을 말한다.
+
+```java
+public void someMethod() {
+  List<Integer> ints = Arrays.asList(1, 2, 3); // type argument를 사용한 List
+
+  List rawType = ints; // type argument를 사용하지 않는 List
+}
+```
+
+Raw Type은 `컴파일이 타입 체크`를 해줄 수 없기 때문에, 컴파일 에러가 아닌 런타임 에러가 발생할 수 있다.
+
+따라서, Raw Type의 사용은 지양해야 한다.
+
+> 자바에서 Raw Type을 지원하는 이유
+> 
+> Java5 이전과의 호환성 때문이다. 제너릭은 Java5 부터 주가된 기능으로, 그 이전의 코드는 제너릭이라는 것이 없었다. 최신 버전의 Java에서 예전 자바의 코드 또한 실행되어야 하기 때문에, Raw Type을 지원한다.
+
+## 제너릭 메서드
+
+메서드 레벨에서 Type parameter를 적는 것
+
+제너릭 메서드가 필요한 이유는 다음과 같다.
+- 제너릭 클래스에 있는 type parameter가 아닌 메서드 에서 사용하고 싶은 type parameter가 있는 경우
+- static 메서드에서 제너릭을 사용하기 위해
+  - static 메서드는 인스턴스를 만들기 전에 사용이 가능하기 때문에, static 메서드 사용 시점에 type을 결정해야 한다.
+
+## Bounded Type parameter
+
+Type parameter는 어떠한 타입이 들어갈 수 있다.  
+이러한 Type parameter에 제한된 타입만 들어갈 수 있도록 하는 것이 Bounded Type parameter이다.
+
+이렇게 Type parameter에 제한을 두는 이유는 다음과 같다.
+- 특정 인터페이스나 클래스를 구현 또는 상속한 클래스만 받고 싶을 경우
+  - Ex) 비교 연산을 위해, Comparalbe 인터페이스를 구현한 클래스만 인자로 받고 싶을 경우
+
+## 제너릭 vs 와일드 카드
+
+제너릭 : type parameter에서 제공하는 기능이 필요할 때 사용
+와일드 카드 : type parameter에서 제공하는 기능이 필요하지 않을 때 사용
+
+```java
+List<?> list; 
+// 1. 원소를 꺼내 와서는 Object에 정의되어 있는 기능만 사용하겠다. equals(), toString(), hashCode()…
+// 2. List에 타입이 뭐가 오든 상관 없다. 나는 List 인터페이스에 정의되어 있는 기능만 사용하겠다. size(), clear().. 단, 타입 파라미터와 결부된 기능은 사용하지 않겠다! add(), addAll()
+
+List<T> list;
+// 1. 원소를 꺼내 와서는 Object에 정의되어 있는 기능만 사용하겠다. equals(), toString(), hashCode()…
+// 2. List에 타입이 뭐가 오든 상관 없다. 나는 List 인터페이스에 정의되어 있는 기능만 사용을 하고, 타입 파라미터와 결부된 기능도 사용하겠다.
+```
+
+## 제너릭의 상속에서 주의할 점
+
+`Number`은 `Integer`의 super 클래스가 맞다.
+하지만 `List<Number>`은 `List<Integer>`의 super 클래스가 아니다.
+
+제너릭은 클래스간 상속에 영향을 주지 않는다.
+
+## capture (공부 필요)
+
+
+> 출처  
+> [토비의 봄 (제너릭)](https://www.youtube.com/watch?v=ipT2XG1SHtQ&list=PLv-xDnFD-nnmof-yoZQN8Fs2kVljIuFyC&index=12&ab_channel=%ED%86%A0%EB%B9%84%EC%9D%98%EC%8A%A4%ED%94%84%EB%A7%81)
+> https://vvshinevv.tistory.com/54

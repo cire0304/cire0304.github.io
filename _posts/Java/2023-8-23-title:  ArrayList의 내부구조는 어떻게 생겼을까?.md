@@ -1,5 +1,5 @@
 ---
-title:  "ArrayList의 내부구조는 어떻게 생겼을까?"
+title: "ArrayList의 내부구조는 어떻게 생겼을까?"
 
 categories:
   - Java-basic

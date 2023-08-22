@@ -2,7 +2,7 @@
 title:  "ArrayList의 내부구조는 어떻게 생겼을까?"
 
 categories:
-  - Java
+  - Java-basic
 tags:
   - [Java, Collection]
 

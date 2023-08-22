@@ -1,19 +1,8 @@
 ---
-layout: single
-title: static 메서드가 Override 되지 않는 이유
-categories: Java
-tag: [Java, Collection]
-toc: true
-author_profile: false
-search: true
-sidebar:
-    nav: "counts"
----
----
 title:  "static 메서드가 Override 되지 않는 이유"
 
 categories:
-  - Java
+  - Java-basic
 tags:
   - [Java, Collection]
 

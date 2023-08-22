@@ -1,7 +1,7 @@
 ---
 title: "자바 제대로 공부하자!"
 layout: archive
-permalink: /categories/java
+permalink: /categories/java-basic
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Java %}
+{% assign posts = site.categories.Java-basic %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

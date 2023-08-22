@@ -1,7 +1,7 @@
 ---
 title: "하나를 공부하더라도 제대로!"
 layout: archive
-permalink: /categories/study
+permalink: /categories/clean-architecture
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Study %}
+{% assign posts = site.categories.Clean-architecture %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

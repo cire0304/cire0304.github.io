@@ -2,7 +2,7 @@
 title:  "Hash를 사용하는 Collection이 hashCode()와 equals()를 사용하는 이유"
 
 categories:
-  - Java
+  - Java-basic
 tags:
   - [Java, Collection]
 

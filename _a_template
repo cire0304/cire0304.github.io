@@ -5,7 +5,25 @@ categories: Java
 tag: [Java, Collection]
 toc: true
 author_profile: false
+search: true
+sidebar:
+    nav: "counts"
+---
+
+
+
+
+
+---
+layout: single
+title: Hash를 사용하는 Collection이 hashCode()와 equals()를 사용하는 이유
+categories: Java
+tag: [Java, Collection]
+toc: true
+author_profile: false
 sidebar:
     nav: "docs"
 search: false
+sidebar:
+    nav: "counts"
 ---

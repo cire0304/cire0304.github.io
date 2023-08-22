@@ -5,7 +5,9 @@ categories: Java
 tag: [Java, Collection]
 toc: true
 author_profile: false
-search: false
+search: true
+sidebar:
+    nav: "counts"
 ---
 
 ## Hash Collection의 동등성 판단

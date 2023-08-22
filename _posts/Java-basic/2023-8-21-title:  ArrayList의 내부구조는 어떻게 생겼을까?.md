@@ -1,16 +1,16 @@
 ---
-title: "ArrayList의 내부구조는 어떻게 생겼을까?"
+title:  "ArrayList의 내부구조는 어떻게 생겼을까?"
 
 categories:
   - Java-basic
 tags:
-  - [Java, Collection]
+  - Java
 
 toc: true
 toc_sticky: true
 
-date: 2023-08-23
-last_modified_at: 2023-08-23
+date: 2023-08-21
+last_modified_at: 2023-08-21
 ---
 
 # ArrayList

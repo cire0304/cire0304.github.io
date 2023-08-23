@@ -24,6 +24,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Linux-architecture" %}
+                        <li><a href="/categories/linux-architecture" class="">실습과 그림으로 배우는 리눅스 구조 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>

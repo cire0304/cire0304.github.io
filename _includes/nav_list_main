@@ -31,6 +31,20 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Oop-for-spring" %}
+                        <li><a href="/categories/oop-for-spring" class="">스프링 입문을 위한 자바 객체지향의 원리와 이해 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Web-programing-jsp" %}
+                        <li><a href="/categories/web-programing-jsp" class="">웹 프로그래밍 - 기초부터 중급까지 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>

@@ -16,6 +16,25 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+        <span class="nav__sub-title">Computer science</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Database" %}
+                        <li><a href="/categories/database" class="">데이터베이스 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Web</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Web-etc" %}
+                        <li><a href="/categories/web-etc" class="">ETC ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>       
+
         <span class="nav__sub-title">Study</span>
             <ul>
                 {% for category in site.categories %}

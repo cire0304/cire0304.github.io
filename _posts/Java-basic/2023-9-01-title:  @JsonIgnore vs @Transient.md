@@ -31,7 +31,7 @@ class Person implements Serializable {
 }
 ```
 
-위와 같은 클래스가 있고, Jackson 라이브러를 이용하여 Json 형식의 데이터로 변환하고 싶다고 가정하겠습니다.
+위와 같은 클래스가 있고, Jackson 라이브러리를 이용하여 Json 형식의 데이터로 변환하고 싶다고 가정하겠습니다.
 
 ```java
 @Test
@@ -88,7 +88,7 @@ class User implements Serializable {
 }
 ```
 
-*여기서 주의해야할 점은 영속 대상에서 제외되는 것이지, 직렬화에서 제외되는 것이 아니라는 점입니다.
+*여기서 주의해야할 점은 영속 대상에서 제외되는 것이지, 직렬화에서 제외되는 것이 아니라는 점입니다.*
 
 ```java
 @Test

@@ -2,7 +2,7 @@
 title:  "@JsonIgnore vs @Transient"
 
 categories:
-  - Java-basic
+  - Java
 tags:
   - [Java, Serialization]
 

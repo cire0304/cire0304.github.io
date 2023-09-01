@@ -2,7 +2,7 @@
 title:  "static 메서드가 Override 되지 않는 이유"
 
 categories:
-  - Java-basic
+  - Java
 tags:
   - [Java, Collection]
 

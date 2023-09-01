@@ -4,7 +4,7 @@ title:  "@JsonIgnore vs @Transient"
 categories:
   - Java-basic
 tags:
-  - [Java, Serralization]
+  - [Java, Serialization]
 
 toc: true
 toc_sticky: true

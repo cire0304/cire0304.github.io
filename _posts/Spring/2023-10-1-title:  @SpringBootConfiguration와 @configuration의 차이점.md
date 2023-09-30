@@ -2,7 +2,7 @@
 title:  "@SpringBootConfiguration와 @configuration의 차이점"
 
 categories:
-  - spring
+  - Spring
 tags:
   - [Spring, Java]
 

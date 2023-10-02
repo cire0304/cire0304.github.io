@@ -82,7 +82,9 @@ public class IssueCouponService {
 1. 쿠폰 발급 코드의 연산이 하나의 트랜잭션으로 묶이지 않는다. (물론, 하나의 트랜잭션으로 묶도록 코드를 짤 수 있을 것입니다.)
   -  위의 코드에서 쿠폰 재고 감소를 할 때, `coupon`이 삭제되어 있다면, 에러가 발생할 것입니다.
 
-> **실제 쿼리**
+> **실제 쿼리**  
+
+
 ```text
 // 등록된 쿠폰 조회
 Id Command    Argument
@@ -147,7 +149,7 @@ public interface CouponRepository extends JpaRepository<Coupon, Long> {
 }
 ```
 
-> **실제 쿼리**
+> **실제 쿼리**  
 
 ```text
 Id Command    Argument
@@ -171,7 +173,7 @@ Id Command    Argument
 210 Query	SET autocommit=1
 ```
 
-## `Optimistic Lock`을 이용한 동시성 제어
+## `Optimistic Lock`을 이용한 동시성 제어  
 
 `Optimistic Lock`은 락을 사용하지 않고, 수정할 때 내가 먼저 이 값을 수정했다고 명시하여 다른 사람이 동일한 조건으로 값을 수정할 수 없게 하는 것입니다.
 JPA의 `@Version`을 이용해서 쉽게 구현할 수 있습니다.
@@ -255,7 +257,9 @@ public class OptimisticLockCouponFacade {
 }
 ```
 
-> **실제 쿼리**
+> **실제 쿼리**  
+
+
 ```text
 Id Command    Argument
 250 Query	SET autocommit=0
@@ -353,7 +357,9 @@ public class IssueCouponService {
 }
 ```
 
-> **실제 쿼리**
+> **실제 쿼리**  
+
+
 ```text
 290 Query	SET autocommit=0
 289 Query	SET autocommit=0

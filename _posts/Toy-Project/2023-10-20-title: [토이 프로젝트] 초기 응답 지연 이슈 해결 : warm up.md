@@ -1,5 +1,5 @@
 ---
-title:  "[토이 프로젝트] 초기 응답 지현 이슈 해결 : warm up"
+title:  "[토이 프로젝트] 초기 응답 지현 이슈 : warm up"
 
 categories:
   - Spring

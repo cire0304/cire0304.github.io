@@ -95,7 +95,7 @@ public class IssueUserCouponService {
     // 쿠폰 재고 감소
     coupon.decrease(currentTime);
 
-    // 사용자 쿠폰 발급 및 발급된 쿠폰 사용자 쿠폰 아이디 반환
+    // 사용자 쿠폰 발급 및 아이디 반환
     UserCoupon issuedUserCoupon = new UserCoupon(command.userId(), coupon, currentTime);
     return userCouponRepository.save(issuedUserCoupon).getUserCouponId();
   }
@@ -106,8 +106,6 @@ public class IssueUserCouponService {
 또한 아래의 그림과 같이 쿠폰이 과발급 되는 것을 막기위해 `비관적 락`을 사용하여 조회 후, 쿠폰의 재고를 감소하였습니다.
 
 ![](../../image/Spring/2023-10-1-title:%20동시성%20이슈/1.png)
-
-그 후 조회된 쿠폰을 사용하여, 사용자 쿠폰을 저장(발급) 합니다.  
 
 # 문제 상황
 

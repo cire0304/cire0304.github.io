@@ -2,7 +2,7 @@
 title:  "[토이 프로젝트] 초기 응답 지연 이슈 : warm up"
 
 categories:
-  - Spring
+  - Ayu-coupon
 tags:
   - [Spring, Java, JPA]
 

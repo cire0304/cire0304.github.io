@@ -1,7 +1,7 @@
 ---
-title: "개발과 관련된 이야기"
+title: "나의 토이 프로젝트"
 layout: archive
-permalink: /categories/development
+permalink: /categories/ayu-coupon
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Development %}
+{% assign posts = site.categories.Ayu-coupon %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

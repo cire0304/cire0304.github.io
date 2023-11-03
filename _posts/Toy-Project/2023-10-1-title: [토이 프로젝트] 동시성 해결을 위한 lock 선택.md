@@ -1,8 +1,8 @@
 ---
-title:  "[토이 프로젝트] 동시성 해결을 위한 lock 선택"
+title:  "[토이 프로젝트] 동시성 이슈 : 이슈 해결을 위한 lock 선택"
 
 categories:
-  - Spring
+  - Ayu-coupon
 tags:
   - [Spring, Java]
 

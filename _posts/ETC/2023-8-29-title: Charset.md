@@ -2,7 +2,7 @@
 title:  "Charset과 인코딩"
 
 categories:
-  - Web-etc
+  - Etc
 tags:
   - [Web, Encoding]
 

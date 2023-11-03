@@ -1,7 +1,7 @@
 ---
-title: "Web을 공부하자!"
+title: "공부하자!"
 layout: archive
-permalink: /categories/web-etc
+permalink: /categories/etc
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Web-etc %}
+{% assign posts = site.categories.Etc %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
